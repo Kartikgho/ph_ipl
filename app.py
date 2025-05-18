@@ -56,15 +56,15 @@ page = st.sidebar.radio(
 
 # Display appropriate page based on selection
 if page == "Home":
-    home_show()
+    home_module.show()
 elif page == "Match Predictions":
-    match_predictions_show(model=st.session_state.model)
+    match_predictions_module.show(model=st.session_state.model)
 elif page == "Player Analysis":
-    player_analysis_show()
+    player_analysis_module.show()
 elif page == "Team Analysis":
-    team_analysis_show()
+    team_analysis_module.show()
 elif page == "Model Explanation":
-    model_explanation_show()
+    model_explanation_module.show()
 
 # Footer
 st.sidebar.markdown("---")
