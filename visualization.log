@@ -1,0 +1,24 @@
+2025-05-18 21:43:16,020 - prompt_engineering - INFO - Generating match explanation prompt for Lucknow Super Giants vs Mumbai Indians
+2025-05-18 21:43:16,020 - ollama_client - INFO - Requesting explanation using model: llama2
+2025-05-18 21:43:16,027 - ollama_client - ERROR - API request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f457d3d72d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-05-18 21:43:16,174 - visualization - INFO - Created head-to-head chart for Lucknow Super Giants vs Mumbai Indians
+2025-05-18 21:43:16,203 - visualization - INFO - Created team form chart for Lucknow Super Giants
+2025-05-18 21:43:16,213 - visualization - INFO - Created team form chart for Mumbai Indians
+2025-05-18 21:43:28,751 - prompt_engineering - INFO - Generating match explanation prompt for Lucknow Super Giants vs Mumbai Indians
+2025-05-18 21:43:28,752 - ollama_client - INFO - Requesting explanation using model: llama2
+2025-05-18 21:43:28,757 - ollama_client - ERROR - API request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f457cda4190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-05-18 21:43:28,793 - visualization - INFO - Created head-to-head chart for Lucknow Super Giants vs Mumbai Indians
+2025-05-18 21:43:28,807 - visualization - INFO - Created team form chart for Lucknow Super Giants
+2025-05-18 21:43:28,819 - visualization - INFO - Created team form chart for Mumbai Indians
+2025-05-18 21:43:30,807 - prompt_engineering - INFO - Generating match explanation prompt for Lucknow Super Giants vs Mumbai Indians
+2025-05-18 21:43:30,811 - ollama_client - INFO - Requesting explanation using model: llama2
+2025-05-18 21:43:30,815 - ollama_client - ERROR - API request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f45be982d90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-05-18 21:43:30,850 - visualization - INFO - Created head-to-head chart for Lucknow Super Giants vs Mumbai Indians
+2025-05-18 21:43:30,866 - visualization - INFO - Created team form chart for Lucknow Super Giants
+2025-05-18 21:43:30,880 - visualization - INFO - Created team form chart for Mumbai Indians
+2025-05-18 21:43:52,158 - prompt_engineering - INFO - Generating match explanation prompt for Chennai Super Kings vs Delhi Capitals
+2025-05-18 21:43:52,159 - ollama_client - INFO - Requesting explanation using model: llama2
+2025-05-18 21:43:52,161 - ollama_client - ERROR - API request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f45be9fded0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-05-18 21:43:52,196 - visualization - INFO - Created head-to-head chart for Chennai Super Kings vs Delhi Capitals
+2025-05-18 21:43:52,214 - visualization - INFO - Created team form chart for Chennai Super Kings
+2025-05-18 21:43:52,233 - visualization - INFO - Created team form chart for Delhi Capitals
