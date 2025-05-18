@@ -13,19 +13,21 @@ from ml_models import ipl_prediction_model
 from utils import visualization, data_helpers
 from llm_integration import ollama_client
 
-# Import page modules directly by loading the Python files
-def import_file(module_name, file_path):
-    spec = importlib.util.spec_from_file_location(module_name, file_path)
+# Function to load modules from file path
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None:
+        return None
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
-# Load all page modules
-home_module = import_file("home", "pages/home.py")
-match_predictions_module = import_file("match_predictions", "pages/match_predictions.py")
-player_analysis_module = import_file("player_analysis", "pages/player_analysis.py")
-team_analysis_module = import_file("team_analysis", "pages/team_analysis.py")
-model_explanation_module = import_file("model_explanation", "pages/model_explanation.py")
+# Load our page modules
+home_page = load_module("home", "pages/home.py")
+match_predictions_page = load_module("match_predictions", "pages/match_predictions.py")
+player_analysis_page = load_module("player_analysis", "pages/player_analysis.py")
+team_analysis_page = load_module("team_analysis", "pages/team_analysis.py")
+model_explanation_page = load_module("model_explanation", "pages/model_explanation.py")
 
 st.set_page_config(
     page_title="IPL Cricket Prediction System",
@@ -56,15 +58,15 @@ page = st.sidebar.radio(
 
 # Display appropriate page based on selection
 if page == "Home":
-    home_module.show()
+    home_page.show()
 elif page == "Match Predictions":
-    match_predictions_module.show(model=st.session_state.model)
+    match_predictions_page.show(model=st.session_state.model)
 elif page == "Player Analysis":
-    player_analysis_module.show()
+    player_analysis_page.show()
 elif page == "Team Analysis":
-    team_analysis_module.show()
+    team_analysis_page.show()
 elif page == "Model Explanation":
-    model_explanation_module.show()
+    model_explanation_page.show()
 
 # Footer
 st.sidebar.markdown("---")
