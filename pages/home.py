@@ -235,7 +235,7 @@ def show():
     with quick_cols[0]:
         if st.button("🎯 Match Predictions", use_container_width=True):
             st.session_state.page = "Match Predictions"
-            st.experimental_rerun()
+            st.rerun()
     
     with quick_cols[1]:
         if st.button("👤 Player Analysis", use_container_width=True):

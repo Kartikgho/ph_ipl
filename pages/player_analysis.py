@@ -10,12 +10,53 @@ from config import CRICKET_ACTION_IMAGES
 
 def show():
     """
-    Page for player performance analysis and predictions
+    Page for player performance analysis and predictions with enhanced UI
     """
-    st.title("Player Performance Analysis")
+    # Custom CSS for enhanced visual styling
+    st.markdown("""
+    <style>
+    .main-title {
+        font-size: 2.8rem;
+        color: #1e3c72;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 800;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .player-card {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        border-left: 4px solid #1e3c72;
+    }
+    .stat-card {
+        background-color: #f0f7ff;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 0;
+        border-left: 3px solid #1e88e5;
+    }
+    .section-header {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #1e3c72;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 10px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Header with enhanced styling
+    st.markdown('<h1 class="main-title">👤 Player Performance Analysis</h1>', unsafe_allow_html=True)
     
     # Display a cricket action image
-    st.image(random.choice(CRICKET_ACTION_IMAGES), use_column_width=True)
+    st.image(random.choice(CRICKET_ACTION_IMAGES), use_container_width=True)
     
     # Player selection
     st.header("Player Selection")
